@@ -5,6 +5,7 @@ url = "https://www.dummyticket.com/dummy-ticket-for-visa-application/"
 url2 = "https://www.calculator.net/rent-calculator.html"
 wait_time = 20
 browser = "chrome"
+headless_execution = True
 
 chrome_driver_path = "D:\\Chrome\\chromedriver.exe"
 firefox_driver_path = "D:\\Firefox_driver\\geckodriver.exe"

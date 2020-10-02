@@ -18,7 +18,9 @@ class BrowserAction():
 
     def get_spdriver(self):
         if self.browser == "chrome":
-            self.spdriver = webdriver.Chrome(executable_path=chrome_driver_path)
+            option_obj = webdriver.ChromeOptions()
+            option_obj.headless = headless_execution
+            self.spdriver = webdriver.Chrome(executable_path=chrome_driver_path, options=option_obj)
             self.spdriver.maximize_window()
             self.spdriver.implicitly_wait(10)
         elif self.browser == "firefox":
